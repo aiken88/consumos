@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadro de mando de consumos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+        }
+        .chartMenu {
+          width: 100vw;
+          height: 40px;
+          background: #1A1A1A;
+          color: rgb(105, 82, 90);
+        }
+        .chartMenu p {
+          padding: 10px;
+          font-size: 20px;
+        }
+        .chartCard {
+          width: 100vw;
+          height: 100%;
+          background: rgba(26, 76, 255, 0.2);
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-around;
+          row-gap: 10px;
+        }
+		.chartTitle {
+          width: 100vw;
+          height: 10vw;
+          background: rgba(26, 76, 255, 0.2);
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-around;
+          row-gap: 10px;
+        }
+        .chartBox {
+          width: 40%;
+          padding: 20px;
+          border-radius: 20px;
+          border: solid 3px rgb(18, 110, 181);
+          background: white;
+        }
+      </style>
+</head>
+<body>
+	<div class="chartTitle">
+		<h1> Cuadro de mando de consumo </h1>
+	</div>
+    <div class="chartCard">
+        <div class="chartBox">
+            <canvas id="grafica1">/canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="grafica2">/canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="grafica3">/canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="grafica4">/canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="grafica5">/canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="grafica6">/canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="grafica7">/canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="grafica8">/canvas>
+        </div>
+		<div class="chartBox">
+            <canvas id="grafica9">/canvas>
+        </div>
+		<div class="chartBox">
+            <canvas id="grafica10">/canvas>
+        </div>
+		<div class="chartBox">
+            <canvas id="grafica11">/canvas>
+        </div>
+		<div class="chartBox">
+			<h4> Varios </h4>
+			<a href="https://www.embalses.net/pantano-920-belena.html"><img border="0" src="https://www.embalses.net/webmasters/gen-embalse.php?e=920" title="Embalses.net - Estado de los embalses y pantanos de España"/></a>
+			<iframe name="iframe_aemet_id33044" width="58%" height="100%" tabindex="0" id="iframe_aemet_id33044" src="https://www.aemet.es/es/eltiempo/prediccion/municipios/mostrarwidget/alcala-de-henares-id28005?w=g4p01110000ohmffffffw299z152x4f86d9t95b6e9r1s4n1" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+	<div class="chartCard">
+		<h3> Powered by el cari </h3>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
